@@ -1,3 +1,6 @@
+//import SideNav from "../ui/components/sidenav";
+import SideNav from "@/app/ui/components/sidenav"; //cool, we don't have to be relative
+
 export default function Layout({
   children,
 }: Readonly<{
@@ -5,7 +8,7 @@ export default function Layout({
 }>) {
   return (
     <>
-    <h1>Blog</h1><hr />
+      <SideNav />
       {children}
     </>
   );
