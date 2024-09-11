@@ -7,9 +7,11 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <SideNav />
-      {children}
-    </>
+    <div style={{ display: "flex" }}>
+      <div style={{ width: "10%" }}>
+        <SideNav />
+      </div>
+      <div>{children}</div>
+    </div>
   );
 }
