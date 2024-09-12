@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-const plugin = require('tailwindcss/plugin')
+//const plugin = require('tailwindcss/plugin')
+import plugin from "tailwindcss/plugin"
 
 const config: Config = {
   content: [
@@ -17,7 +18,8 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(function({ addBase, theme }) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    plugin(function({ addBase, theme }: {addBase: any, theme: any}) {
       addBase({
         'h1': { fontSize: theme('fontSize.2xl') },
         'h2': { fontSize: theme('fontSize.xl') },
