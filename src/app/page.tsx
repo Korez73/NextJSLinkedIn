@@ -9,7 +9,7 @@ export default function Home() {
           <div className="flex flex-col justify-center">
             <h1 className={`text-4xl font-bold mb-4 ${styles.text_carrot}`}>Welcome</h1>
             <p className="text-lg text-gray-700 mb-4">
-              Massa urna magnis dignissim id euismod porttitor vitae etiam viverra nunc at adipiscing sit morbi aliquet mauris porttitor nisi, senectus pharetra, ac porttitor orci.
+              Hey there friend.  This is a next.js app created by Jamie.  There are some blog post abilities as well as an upcoming AI chatbot which may be rather neat. 
             </p>
             <a href="/blog/posts" className={`outline outline-1 outline-offset-2 border-purple-700 text-purple-700 hover:text-white py-2 px-4 rounded hover:bg-purple-800 md:w-auto ${styles.fit_content}`}>
               Go to Blog
