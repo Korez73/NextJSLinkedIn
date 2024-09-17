@@ -7,6 +7,6 @@ export default function Page({ params }: { params: { id: string } }) {
   return (
     <>
       <h1>Post</h1>
-      <PostComponent {...post} />
+      {post && <PostComponent {...post} />}
     </>)
 }
