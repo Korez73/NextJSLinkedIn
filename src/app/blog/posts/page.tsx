@@ -1,12 +1,12 @@
 import Link from "next/link"
-
 import { Button } from "@/app/ui/components/button"
-// import { posts } from '@/app/lib/placeholder-data';
+import { unstable_noStore as noStore } from 'next/cache'
 import Post from '@/app/ui/components/posts/Post';
 import { connectToDB, getPosts } from '@/app/lib/data';
 
-
+//causes F12 console errors re: client components (and Sandy saw that error!)
 export default async function Page() {
+  noStore();
   const client = await connectToDB();
   const posts = await getPosts();
 
